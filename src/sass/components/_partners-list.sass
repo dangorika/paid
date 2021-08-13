@@ -1,0 +1,30 @@
+.partners-list
+  display: flex
+  align-items: center
+
+  &__item
+    transition: opacity .3s ease-in-out
+
+    &:not(:last-child)
+      margin-right: rem(56)
+
+    &_loveus
+      width: rem(99)
+
+    &_leader
+      width: rem(104)
+
+    &_fb
+      width: rem(100)
+
+    &_shopify
+      width: rem(136)
+
+    &_tiktok
+      width: rem(88)
+
+    &_tech50
+      width: rem(205)
+
+    +hover
+      opacity: .75

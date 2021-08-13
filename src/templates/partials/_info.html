@@ -1,0 +1,18 @@
+<div class="info">
+  {{ info.title | safe }}
+  <p class="info__text text">
+    {{ info.text | safe }}
+  </p>
+  <a href="/" class="info__button button button_black button_lg">
+    Get Started
+    {{ mixins.icon('arrow-next-lg') }}
+  </a>
+  <ul class="info__list checklist">
+    {% for item in info.list %}
+    <li class="checklist__item">
+      {{ mixins.icon('checkmark') }}
+      {{ item }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

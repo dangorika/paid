@@ -1,0 +1,20 @@
+{% set promo_info = {
+  title: 'Buy paid social <br />through creator <br />handles',
+  text: "Turn content into paid social ads using the creator's handle—performs better than the ads you're used to.",
+  quote: '<q>With #paid, the results have been fantastic. We’ve seen our CPA and ROI come in well above the bar, and we’ve seen thousands of leads generated.</q>',
+  author: '<strong>Eva Tang</strong>, Head of Marketing Innovation',
+  img: 'img/precision-nutrition.png',
+  alt: 'Precision Nutrition',
+  new: true
+} %}
+
+<section class="section promo" style="background-image: url('img/promo-bg.svg');">
+  <div class="container">
+    <div class="layout">
+      <img src="img/promo-new.jpg" alt="Promo" class="layout__img">
+      <div class="layout__text">
+        {% include "partials/_promo-info.html" %}
+      </div>
+    </div>
+  </div>
+</section>

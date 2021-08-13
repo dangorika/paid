@@ -1,0 +1,53 @@
+=roboto-regular
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+
+=roboto-bold
+  font-family: 'Roboto', sans-serif
+  font-weight: 700
+
+a
+  color: currentColor
+
+.h1
+  font-size: rem(56)
+  line-height: 1.1
+
+.h2
+  font-size: rem(48)
+  line-height: 1.1
+
+.h3
+  font-size: rem(40)
+  line-height: 1.2
+
+.h4
+  font-size: rem(32)
+  line-height: 1.1
+
+.text
+  font-size: rem(20)
+
+.uppercase
+  text-transform: uppercase
+
+.regular
+  +roboto-regular
+
+.bold
+  +roboto-bold
+
+.link
+  display: inline-block
+  text-decoration: none
+  padding-right: rem(39)
+  position: relative
+
+  .icon
+    width: rem(25)
+    height: rem(13)
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+

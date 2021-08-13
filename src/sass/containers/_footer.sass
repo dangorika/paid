@@ -1,0 +1,43 @@
+.footer
+  background-image: url('../img/footer-bg.png')
+  +cover
+  padding: rem(136) 0
+  position: relative
+  overflow: hidden
+
+  &__container
+    position: relative
+    z-index: 1
+
+  &__sitemap
+    margin-bottom: rem(72)
+
+  &__partners
+    margin-bottom: rem(148)
+
+  &::before
+    content: ''
+    display: block
+    width: rem(725)
+    height: rem(560)
+    left: - rem(596)
+    top: percentage(262/1396)
+    position: absolute
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: 100% 100%
+    background-image: url('../img/footer-bg-1.png')
+    z-index: 0
+
+  &::after
+    content: ''
+    display: block
+    width: rem(515)
+    height: rem(330)
+    position: absolute
+    right: - rem(77)
+    bottom: percentage(9/1396)
+    background-size: contain
+    background-repeat: no-repeat
+    background-image: url('../img/footer-bg-2.png')
+    z-index: 0

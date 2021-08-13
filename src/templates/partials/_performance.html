@@ -1,0 +1,20 @@
+{% set promo_info = {
+  title: "Keep an eye on your creator's performance",
+  title_bold: true,
+  text: 'No more black box. See how your creators and content are performing—all through the funnel.'
+} %}
+
+<section class="section performance">
+  <div class="container">
+    <div class="layout">
+      <div class="layout__text">
+        {% include "partials/_promo-info.html" %}
+      </div>
+      <div class="layout__img performance__img">
+        <img src="img/performance.jpg" alt="Performance" />
+        <img src="img/arrow.svg" alt="Arrow" class="performance__arrow" />
+      </div>
+    </div>
+    {% include "partials/_quote-box.html" %}
+  </div>
+</section>

@@ -1,0 +1,22 @@
+{% set promo_info = {
+  title: 'Match with <br />creators who love <br />your brand',
+  text: 'Stop using search tools. Try Handraise, it finds creators who are the top match for your campaign.',
+  quote: '<q>We launched a campaign in <strong>under 10 minutes</strong> and got to choose from such an authentic roster of creators that were the perfect fit for our brand.</q>',
+  author: '<strong>Brittany Doll</strong>, Marketing Manager',
+  img: 'img/uber-eats.svg',
+  alt: 'Uber Eats'
+} %}
+
+<section class="section promo">
+  <div class="container">
+    <h2 class="promo__title h2 bold">
+      Use #paid to drive growth at every stage of your customers journey
+    </h2>
+    <div class="layout">
+      <div class="layout__text">
+        {% include "partials/_promo-info.html" %}
+      </div>
+      <img src="img/promo.jpg" alt="Promo" class="layout__img">
+    </div>
+  </div>
+</section>

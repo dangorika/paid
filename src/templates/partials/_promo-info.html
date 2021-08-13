@@ -1,0 +1,24 @@
+<div class="promo-info">
+  {% if promo_info.new %}
+  <div class="promo-info__badge badge">new</div>
+  {% endif %}
+  <h3 class="promo-info__title h3{% if promo_info.title_bold %} bold{% else %} regular{% endif %}">
+    {{ promo_info.title | safe }}
+  </h3>
+  <div class="promo-info__text text">
+    {{ promo_info.text | safe }}
+  </div>
+  <a href="/" class="promo-info__link link bold">
+    Learn More
+    {{ mixins.icon('arrow-next') }}
+  </a>
+  {% if promo_info.quote %}
+  <div class="promo-info__quote promo-quote">
+    {{ promo_info.quote | safe }}
+    <div class="promo-quote__author">
+      {{ promo_info.author | safe }}
+      <img src="{{ promo_info.img }}" alt="{{ promo_info.alt }}">
+    </div>
+  </div>
+  {% endif %}
+</div>

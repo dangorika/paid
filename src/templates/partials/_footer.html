@@ -1,0 +1,21 @@
+{% set info = {
+  title: '<h2 class="info__title h2 regular">Run a test campaign today!</h2>',
+  text: 'Try a new channel to reach your customers and grow your business.',
+  list: ['Easy setup', 'Guaranteed creator matches', 'Cancel anytime']
+} %}
+
+
+<footer class="footer">
+  <div class="footer__container container">
+    {% include "partials/_info.html" %}
+    <div class="footer__sitemap">
+      {% include "partials/_sitemap.html" %}
+    </div>
+    <div class="footer__partners">
+      {% include "partials/_partners-list.html" %}
+    </div>
+    <p class="footer__copyright">
+      © 2021 Hashtag Paid Inc. All rights reserved. #paid is a trademark of Hashtag Paid Inc.
+    </p>
+  </div>
+</footer>

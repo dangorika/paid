@@ -1,0 +1,123 @@
+{% set sitemap = [
+  {
+    title: '#paid',
+    links: [
+      {
+        url: '/',
+        text: 'Become a creator'
+      },
+      {
+        url: '/',
+        text: 'About us'
+      },
+      {
+        url: '/',
+        text: 'Careers'
+      },
+      {
+        url: '/',
+        text: 'Terms'
+      },
+      {
+        url: '/',
+        text: 'Privacy'
+      },
+      {
+        url: '/',
+        text: 'Black Lives Matter'
+      }
+    ]
+  },
+  {
+    title: 'For teams',
+    links: [
+      {
+        url: '/',
+        text: 'Direct to consumer'
+      },
+      {
+        url: '/',
+        text: 'Agency'
+      },
+      {
+        url: '/',
+        text: 'Enterprise'
+      }
+    ]
+  },
+  {
+    title: 'Learn',
+    links: [
+      {
+        url: '/',
+        text: 'Pricing'
+      },
+      {
+        url: '/',
+        text: 'Banknotes'
+      },
+      {
+        url: '/',
+        text: 'Partner Program'
+      },
+      {
+        url: '/',
+        text: 'Partner Directory'
+      },
+      {
+        url: '/',
+        text: 'Creator Measurement Suite'
+      },
+      {
+        url: '/',
+        text: 'Reports'
+      },
+      {
+        url: '/',
+        text: 'Help Center'
+      }
+    ]
+  },
+  {
+    title: 'Contact',
+    links: [
+      {
+        url: '/',
+        text: 'Contact us'
+      },
+      {
+        url: '/',
+        text: 'Instagram'
+      },
+      {
+        url: '/',
+        text: 'Linkedin'
+      },
+      {
+        url: '/',
+        text: 'Facebook'
+      },
+      {
+        url: '/',
+        text: 'Twitter'
+      }
+    ]
+  }
+] %}
+
+<nav class="sitemap">
+  {% for col in sitemap %}
+  <div class="sitemap__col">
+    <p class="sitemap__title">
+      {{ col.title | safe }}
+    </p>
+    <ul class="sitemap__list">
+      {% for item in col.links %}
+      <li class="sitemap__list-item">
+        <a href="{{ item.url }}">{{ item.text | safe }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</nav>
